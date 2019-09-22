@@ -213,71 +213,17 @@ const field = {
     },
     checkWin: function () {
 
-        // let width =
-
         if (this.checkWinHorizontal() ||
             this.checkWinVertical() ||
             this.checkWinDiagonalLeft() ||
             this.checkWinDiagonalRight()
-        // if( this.cells[0].classList.length > 1 &&
-        //     this.cells[1].classList.length > 1 &&
-        //     this.cells[2].classList.length > 1 &&
-        //     this.cells[0].classList[1] === this.cells[1].classList[1] &&
-        //     this.cells[1].classList[1] === this.cells[2].classList[1]
-        //     ||
-        //     this.cells[3].classList.length > 1 &&
-        //     this.cells[4].classList.length > 1 &&
-        //     this.cells[5].classList.length > 1 &&
-        //     this.cells[3].classList[1] === this.cells[4].classList[1] &&
-        //     this.cells[4].classList[1] === this.cells[5].classList[1]
-        //     ||
-        //     this.cells[6].classList.length > 1 &&
-        //     this.cells[7].classList.length > 1 &&
-        //     this.cells[8].classList.length > 1 &&
-        //     this.cells[6].classList[1] === this.cells[7].classList[1] &&
-        //     this.cells[7].classList[1] === this.cells[8].classList[1]
-        //     ||
-        //     this.cells[0].classList.length > 1 &&
-        //     this.cells[4].classList.length > 1 &&
-        //     this.cells[8].classList.length > 1 &&
-        //     this.cells[0].classList[1] === this.cells[4].classList[1] &&
-        //     this.cells[4].classList[1] === this.cells[8].classList[1]
-        //     ||
-        //     this.cells[2].classList.length > 1 &&
-        //     this.cells[4].classList.length > 1 &&
-        //     this.cells[6].classList.length > 1 &&
-        //     this.cells[2].classList[1] === this.cells[4].classList[1] &&
-        //     this.cells[4].classList[1] === this.cells[6].classList[1]
-        //     ||
-        //     this.cells[0].classList.length > 1 &&
-        //     this.cells[3].classList.length > 1 &&
-        //     this.cells[6].classList.length > 1 &&
-        //     this.cells[0].classList[1] === this.cells[3].classList[1] &&
-        //     this.cells[3].classList[1] === this.cells[6].classList[1]
-        //     ||
-        //     this.cells[1].classList.length > 1 &&
-        //     this.cells[4].classList.length > 1 &&
-        //     this.cells[7].classList.length > 1 &&
-        //     this.cells[1].classList[1] === this.cells[4].classList[1] &&
-        //     this.cells[4].classList[1] === this.cells[7].classList[1]
-        //     ||
-        //     this.cells[2].classList.length > 1 &&
-        //     this.cells[5].classList.length > 1 &&
-        //     this.cells[8].classList.length > 1 &&
-        //     this.cells[2].classList[1] === this.cells[5].classList[1] &&
-        //     this.cells[5].classList[1] === this.cells[8].classList[1]
         ) {
-            //alert('Выиграли: ' + (this.bCross ? 'крестики' : 'нолики'));
-
             this.win = true;
 
             setTimeout(
                 () => {
-                    // alert('Выиграли: ' + (this.bCross ? 'крестики' : 'нолики'));
 
                     this.showPopup('выиграли', (this.bCross ? 'Крестики' : 'Нолики'));
-
-                    // console.log(this.bCross);
 
                     if (this.bCross) {
                         this.winCross++;
@@ -306,9 +252,6 @@ const field = {
             }
 
             if (draw) {
-
-                // alert('Ничья!');
-
                 this.win = true;
 
                 setTimeout(
@@ -318,8 +261,6 @@ const field = {
                     },
                     100
                 );
-
-                // this.newGame();
             }
         }
     },
@@ -480,38 +421,3 @@ document.getElementById('registration')
                         field.registration();
                     });
         });
-
-
-// const xhr = new XMLHttpRequest();
-//
-// xhr.open('GET', 'http://192.168.64.2', false);
-//
-// xhr.send();
-//
-// if(xhr.status == 200){
-//     console.log(xhr);
-// }
-//
-//
-// fetch(
-//     'http://192.168.64.2',
-//     {
-//         method: 'GET',
-//         // headers: {},
-//         // body: {}
-//     }
-// ).then(res => res.text()).then(res => {
-//
-//     console.log(res);
-//
-// });
-
-
-
-
-
-
-
-
-
-
